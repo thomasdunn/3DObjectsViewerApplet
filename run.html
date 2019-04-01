@@ -1,0 +1,45 @@
+<html>
+  <title>3D Objects Viewer Applet</title>
+</head>
+<body>
+  <h1>3D Objects Viewer Applet</h1>
+  <p>
+  <table border="1">
+    <tbody><tr><td>
+      <applet codebase="src" code="com/dunncom/graphics/ThreeDimensionalObjectsApplet.class" width="500" height="500">
+        <param name="startModel" value="dodecahedron.nff">
+        Please use a browser that can view Java 1.1 applets, such as
+        Netscape Navigator 4.0+ or Internet Explorer 4.0+
+      </applet>
+    </td></tr>
+  </tbody></table>
+  <br>
+  </p><h3>Instructions</h3>
+  <ul>
+  <li>Choose a model from the models selection box.
+  </li><li>If "Fill Object?" is checked, the model will be filled and shaded.  Otherwise the model will be a "wireframe".
+  </li><li>If "Rotate Object?" is checked, the model will automatically rotate.
+  </li><li>You can rotate the model with your mouse by dragging the model.
+  </li><li>Some models are displayed as wireframes by default.  The faces of these models do not all show up correctly.<br>They are still interesting to view filled though.  Click the Fill Object checkbox to fill them.
+  </li><li>Some models, ones with hundreds of faces and vertices, can take a while to load.
+  </li><li>For slow loading models, status can be seen in the browsers status area, at the bottom of the browser window.
+  </li></ul>
+  <p>
+  <br>
+  </p><h3>Download</h3>
+  <p>
+  <table border="0">
+  <tbody><tr><td><a href="src/com/dunncom/graphics/ThreeDimensionalObjectsApplet.java">ThreeDimensionalObjectsApplet.java</a></td><td>The Applet for viewing 3D Objects<br>
+  </td></tr><tr><td><a href="src/com/dunncom/graphics/Matrix3D.java">Matrix3D.java</a></td><td>Matrix Data structure class, used for transforms<br>
+  </td></tr><tr><td><a href="src/com/dunncom/graphics/Point3D.java">Point3D.java</a></td><td>Simple point class with public x, y, z, and a coordinates<br>
+  </td></tr><tr><td><a href="src/com/dunncom/graphics/Polygon.java">Polygon.java</a></td><td>Simple polygon class<br>
+  </td></tr><tr><td><a href="src/com/dunncom/graphics/Polyhedron.java">Polyhedron.java</a></td><td>Simple polyhedron class<br>
+  </td></tr><tr><td><a href="src/com/dunncom/graphics/ThreeDimensionalObjectFileReader.java">ThreeDimensionalObjectFileReader.java</a></td><td>Base class for object file readers<br>
+  </td></tr><tr><td><a href="src/com/dunncom/graphics/NFFReader.java">NFFReader.java</a></td><td>.nff object file reader<br>
+  </td></tr><tr><td><a href="src/com/dunncom/graphics/NFZReader.java">NFZReader.java</a></td><td>.nff object file reader (where vertex indices are zero based)<br>
+  </td></tr><tr><td><a href="src/com/dunncom/graphics/OBJReader.java">OBJReader.java</a></td><td>.obj objece file reader<br>
+  </td></tr><tr><td><a href="src/com/dunncom/graphics/OFFReader.java">OFFReader.java</a></td><td>.off object file reader<br>
+  </td></tr><tr><td><a href="src/com/dunncom/graphics/OFOReader.java">OFOReader.java</a></td><td>.off object file reader (where vertex indices are one based)<br>
+  </td></tr><tr><td><a href="src/models/">Object model files</a></td><td>Check out what the object model files look like<br>
+  </td></tr></tbody></table>
+</p></body></html>
